@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Three Numbers</title>
+
+<script src="js/angular.min.js"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+	<div class="container">
+		<br>
+		<br>
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Tab1</a></li>
+			<li><a data-toggle="tab" href="#menu1">Tab2</a></li>
+		</ul>
+		
+<body ng-app='MainApp'>
+<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+						<h3>FirstTab</h3>
+
+    <div ng-controller='MainCtrl'>
+      <div>
+      
+      
+        <h4>Ctrl1</h4>
+        <div>{{text}}</div>
+        <input ng-model="firstBox" /> 
+						<input ng-model="SecondBox" />
+						<input ng-model="thirdBox" />
+        <button type='button' ng-click='send();'>Show Data</button>
+        	<p>The Addition Of Three Value is {{value}}</p>
+      </div>
+    </div>
+    </div>
+   
+    
+    <div id="menu1" class="tab-pane fade">
+						<h3>Text Box Values</h3>
+    <div ng-controller='MainCtrl2'>
+      <div>
+        <h4>Ctrl2</h4>
+        <div>First Text Box = {{text}}</div>
+         <div>Second Text Box ={{text2}}</div>
+          <div>Third Text Box ={{text3}}</div>
+      </div>
+    </div>
+    </div></div></body>
+    </div>
+</body>
+
+
+
+	<script src="js/kk.js"></script>
+</body>
+</html>
